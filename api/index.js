@@ -18,7 +18,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
- mongoose.connect('mongodb+srv://sinhaadesh123:WtaKph1jNupXuAL9@cluster0.teranyz.mongodb.net/')
+ mongoose.connect('mongodb+srv://sinhaadesh123:QYgmYVmAPBveQHrl@cluster0.ouvshgc.mongodb.net/')
+
 app.post('/register', async(req,res)=>{
     const {username,password}=req.body;
     try{
